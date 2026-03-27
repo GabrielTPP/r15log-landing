@@ -66,6 +66,14 @@ document.querySelectorAll('.servico-card, .diferencial-item, .sobre-text, .conta
     observer.observe(el);
 });
 
+// Hero keywords bold animation
+setTimeout(() => {
+    const keywords = document.querySelectorAll('.hero-keyword');
+    keywords.forEach((kw, i) => {
+        setTimeout(() => kw.classList.add('active'), i * 300);
+    });
+}, 200);
+
 // Smooth scroll for anchor links (fallback)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

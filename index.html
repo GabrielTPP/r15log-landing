@@ -37,11 +37,17 @@
 
     <!-- Hero -->
     <section class="hero">
+        <div class="hero-video-wrapper">
+            <video class="hero-video" autoplay muted loop playsinline poster="assets/img/hero-poster.png">
+                <source src="assets/img/hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
         <div class="container hero-content">
             <div class="hero-text">
                 <span class="hero-badge">Desde 2007 | Barueri/SP | Atendimento nacional</span>
                 <h1>Soluções completas em <span class="highlight">transporte</span> e <span class="highlight">logística</span></h1>
-                <p class="hero-subtitle">Transporte rodoviário, aéreo, moto frete e executivo. Frota própria e diversificada com rastreamento em tempo real. Atendemos empresas de todos os portes em todo o Brasil.</p>
+                <p class="hero-subtitle">Frota própria e diversificada com rastreamento em tempo real. <span class="hero-keyword">Rodoviário</span>, <span class="hero-keyword">aéreo</span>, <span class="hero-keyword">moto frete</span> e <span class="hero-keyword">executivo</span> para empresas de todos os portes.</p>
                 <div class="hero-ctas">
                     <a href="https://wa.me/5511932428191?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" class="btn btn-cta btn-lg" target="_blank" rel="noopener">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -53,22 +59,9 @@
                     </a>
                 </div>
                 <div class="hero-trust">
-                    <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span>+19 anos de experiência</span>
-                    </div>
-                    <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span>Frota própria e diversificada</span>
-                    </div>
-                    <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span>Cobertura em todo o Brasil</span>
-                    </div>
-                    <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span>Rastreamento em tempo real</span>
-                    </div>
+                    <span class="trust-chip">+19 anos de experiência</span>
+                    <span class="trust-chip">Cobertura nacional</span>
+                    <span class="trust-chip">Rastreamento em tempo real</span>
                 </div>
             </div>
         </div>
@@ -83,12 +76,27 @@
             <div class="servicos-grid">
 
                 <!-- Transporte Rodoviário Fracionado -->
-                <div class="servico-card">
+                <div class="servico-card servico-destaque">
+                    <span class="servico-tag tag-economia">Melhor custo-benefício</span>
                     <div class="servico-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
                     </div>
                     <h3>Transporte Fracionado</h3>
                     <p>Ideal para empresas que precisam enviar pequenas quantidades sem contratar veículo exclusivo. Diferentes cargas agrupadas no mesmo transporte, otimizando espaço e reduzindo custos.</p>
+                    <div class="servico-highlights">
+                        <span class="highlight-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                            Carga compartilhada
+                        </span>
+                        <span class="highlight-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                            Redução de custos
+                        </span>
+                        <span class="highlight-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Todo o Brasil
+                        </span>
+                    </div>
                     <ul class="servico-lista">
                         <li>Coleta no local de origem</li>
                         <li>Triagem e organização da carga</li>
@@ -99,12 +107,27 @@
                 </div>
 
                 <!-- Transporte Dedicado -->
-                <div class="servico-card">
+                <div class="servico-card servico-destaque">
+                    <span class="servico-tag tag-velocidade">Máxima agilidade</span>
                     <div class="servico-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                     </div>
                     <h3>Transporte Dedicado</h3>
                     <p>Veículos exclusivos para sua carga com maior controle logístico, rapidez e transporte direto ao destino sem etapas intermediárias. Atendemos todo o Brasil.</p>
+                    <div class="servico-highlights">
+                        <span class="highlight-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                            Veículo exclusivo
+                        </span>
+                        <span class="highlight-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            Entrega direta
+                        </span>
+                        <span class="highlight-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            Sem paradas
+                        </span>
+                    </div>
                     <ul class="servico-lista">
                         <li>Cargas urgentes</li>
                         <li>Operações industriais</li>
@@ -290,29 +313,101 @@
     <!-- Cobertura -->
     <section class="cobertura" id="cobertura">
         <div class="container">
-            <span class="section-badge">Onde Atuamos</span>
-            <h2 class="section-title">Cobertura em <span class="highlight">todo o Brasil</span></h2>
-            <p class="section-subtitle">Forte presença em São Paulo com capacidade de atendimento nacional.</p>
-            <div class="cobertura-grid">
-                <div class="cobertura-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    <h3>Grande São Paulo</h3>
-                    <p>Barueri e toda a região metropolitana com agilidade máxima nas entregas.</p>
+            <div class="cobertura-layout">
+                <div class="cobertura-texto">
+                    <span class="section-badge">Onde Atuamos</span>
+                    <h2 class="section-title">Cobertura em <span class="highlight">todo o Brasil</span></h2>
+                    <p class="cobertura-desc">Forte presença em São Paulo com capacidade de atendimento em todo o território nacional.</p>
+                    <div class="cobertura-lista">
+                        <div class="cobertura-item-novo">
+                            <div class="cobertura-pin destaque">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h3>Grande São Paulo</h3>
+                                <p>Sede em Barueri. Entregas expressas em toda a região metropolitana.</p>
+                            </div>
+                        </div>
+                        <div class="cobertura-item-novo">
+                            <div class="cobertura-pin destaque">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h3>Interior de SP</h3>
+                                <p>Cobertura completa: Campinas, Ribeirão Preto, Sorocaba e mais.</p>
+                            </div>
+                        </div>
+                        <div class="cobertura-item-novo">
+                            <div class="cobertura-pin destaque">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h3>Litoral Paulista</h3>
+                                <p>Santos, Guarujá e toda a baixada santista.</p>
+                            </div>
+                        </div>
+                        <div class="cobertura-item-novo">
+                            <div class="cobertura-pin">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h3>Todo o Brasil</h3>
+                                <p>Operações via rodoviário e aéreo para todas as regiões do país.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cobertura-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    <h3>Interior de SP</h3>
-                    <p>Cobertura completa no interior do estado de São Paulo.</p>
-                </div>
-                <div class="cobertura-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    <h3>Litoral Paulista</h3>
-                    <p>Atendimento eficiente em toda a região litorânea de SP.</p>
-                </div>
-                <div class="cobertura-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    <h3>Todo o Brasil</h3>
-                    <p>Operações logísticas para demais regiões do país via rodoviário e aéreo.</p>
+                <div class="cobertura-mapa">
+                    <div class="mapa-wrapper">
+                        <img src="assets/img/mapa-brasil.svg" alt="Mapa do Brasil - Cobertura R15 LOG" class="mapa-brasil-img">
+
+                        <!-- Pins e rotas em SVG overlay -->
+                        <svg class="mapa-overlay" viewBox="0 0 2168 2354" overflow="hidden">
+                            <defs>
+                                <clipPath id="mapaClip">
+                                    <rect x="0" y="0" width="2168" height="2354"/>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#mapaClip)">
+                            <g transform="translate(160, 120)">
+                                <!-- Rotas tracejadas de SP para capitais -->
+                                <line x1="1250" y1="1530" x2="1100" y2="480" class="rota-line"/>
+                                <line x1="1250" y1="1530" x2="1560" y2="520" class="rota-line"/>
+                                <line x1="1250" y1="1530" x2="1680" y2="700" class="rota-line"/>
+                                <line x1="1250" y1="1530" x2="1580" y2="980" class="rota-line"/>
+                                <line x1="1250" y1="1530" x2="1120" y2="1180" class="rota-line"/>
+                                <line x1="1250" y1="1530" x2="980" y2="1220" class="rota-line"/>
+                                <line x1="1250" y1="1530" x2="680" y2="1120" class="rota-line"/>
+                                <line x1="1250" y1="1530" x2="1100" y2="1800" class="rota-line"/>
+                                <line x1="1250" y1="1530" x2="980" y2="1950" class="rota-line"/>
+                                <line x1="1250" y1="1530" x2="1420" y2="1480" class="rota-line"/>
+                                <line x1="1250" y1="1530" x2="1400" y2="1320" class="rota-line"/>
+                                <line x1="1250" y1="1530" x2="1100" y2="1520" class="rota-line"/>
+
+                                <!-- Pontos dourados: capitais -->
+                                <circle cx="480" cy="620" r="14" class="destino-dot-gold"/>
+                                <circle cx="1100" cy="480" r="14" class="destino-dot-gold"/>
+                                <circle cx="1560" cy="520" r="14" class="destino-dot-gold"/>
+                                <circle cx="1680" cy="700" r="14" class="destino-dot-gold"/>
+                                <circle cx="1580" cy="980" r="14" class="destino-dot-gold"/>
+                                <circle cx="1120" cy="1180" r="14" class="destino-dot-gold"/>
+                                <circle cx="980" cy="1220" r="14" class="destino-dot-gold"/>
+                                <circle cx="680" cy="1120" r="14" class="destino-dot-gold"/>
+                                <circle cx="1100" cy="1800" r="14" class="destino-dot-gold"/>
+                                <circle cx="980" cy="1950" r="14" class="destino-dot-gold"/>
+                                <circle cx="1420" cy="1480" r="14" class="destino-dot-gold"/>
+                                <circle cx="1400" cy="1320" r="14" class="destino-dot-gold"/>
+
+                                <!-- Pin: Interior SP -->
+                                <circle cx="1100" cy="1520" r="16" class="pin-sp"/>
+
+                                <!-- Pin: Grande SP (principal, com pulse) -->
+                                <circle cx="1250" cy="1530" r="40" class="pin-pulse-circle"/>
+                                <circle cx="1250" cy="1530" r="20" class="pin-sp-main"/>
+                            </g>
+                            </g>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
@@ -424,9 +519,50 @@
                 <a href="mailto:atendimento@r15log.com.br">atendimento@r15log.com.br</a>
             </div>
         </div>
+        <div class="footer-selos">
+            <div class="container">
+                <div class="selos-grid">
+                    <div class="selo">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        <div>
+                            <span class="selo-titulo">Transporte Seguro</span>
+                            <span class="selo-sub">Carga 100% segurada</span>
+                        </div>
+                    </div>
+                    <div class="selo">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                        <div>
+                            <span class="selo-titulo">Excelência Logística</span>
+                            <span class="selo-sub">+19 anos no mercado</span>
+                        </div>
+                    </div>
+                    <div class="selo">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <div>
+                            <span class="selo-titulo">99% Pontualidade</span>
+                            <span class="selo-sub">Entregas no prazo</span>
+                        </div>
+                    </div>
+                    <div class="selo">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                        <div>
+                            <span class="selo-titulo">Frota Própria</span>
+                            <span class="selo-sub">Veículos rastreados</span>
+                        </div>
+                    </div>
+                    <div class="selo">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                        <div>
+                            <span class="selo-titulo">Equipe Certificada</span>
+                            <span class="selo-sub">Profissionais qualificados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2025 R15 Serviço de Transporte Ltda - CNPJ: 28.507.433/0001-57 - Todos os direitos reservados.</p>
+                <p>&copy; 2026 R15 Serviço de Transporte Ltda - CNPJ: 28.507.433/0001-57 - Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
