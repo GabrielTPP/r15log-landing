@@ -1,0 +1,3 @@
+# Desabilitar redirecionamento do WordPress nesta pasta
+RewriteEngine Off
+DirectoryIndex index.html

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /novosite/
+Disallow: /backup-wp/
+
+Sitemap: https://r15log.com.br/sitemap.xml
